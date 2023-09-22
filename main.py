@@ -3,13 +3,13 @@ from random import randint
 
 def attack(char_name, char_class):
     if char_class == 'warrior':
-        return (f'{char_name}',
+        return (f'{char_name} '
                 f'нанёс урон противнику равный {5 + randint(3, 5)}')
     if char_class == 'mage':
-        return (f'{char_name}',
+        return (f'{char_name} '
                 f'нанёс урон противнику равный {5 + randint(5, 10)}')
     if char_class == 'healer':
-        return (f'{char_name}',
+        return (f'{char_name} '
                 f'нанёс урон противнику равный {5 + randint(-3, -1)}')
     return 'awesome'
 
@@ -26,13 +26,13 @@ def defence(char_name, char_class):
 
 def special(char_name, char_class):
     if char_class == 'warrior':
-        return (f'{char_name}',
+        return (f'{char_name}'
                 f'применил специальное умение «Выносливость {80 + 25}»')
     if char_class == 'mage':
-        return (f'{char_name}',
+        return (f'{char_name}'
                 f'применил специальное умение «Атака {5 + 40}»')
     if char_class == 'healer':
-        return (f'{char_name}',
+        return (f'{char_name}'
                 f'применил специальное умение «Защита {10 + 30}»')
     return 'awesome'
 
